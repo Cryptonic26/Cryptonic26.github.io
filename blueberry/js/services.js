@@ -3,11 +3,11 @@ console.log('loading services');
 function request (options, callback) {
     options = options || {};
 
-    var host   = options.host    || 'localhost';
-    var port   = options.port    || '1337';
-    var model  = options.model   || callback('No model key provided in the options object.');
-    var query  = options.query   || {};
-    var action = options.action  || 'find';
+    var host        = options.host          || 'localhost';
+    var port        = options.port          || '1337';
+    var controller  = options.controller    || callback('No model key provided in the options object.');
+    var query       = options.query         || {};
+    var action      = options.action        || '';
 
     var xhr = new XMLHttpRequest();
 

@@ -1,1 +1,8 @@
-console.log('main.js loaded', this);
+request({
+    controller: 'hangout'
+
+}, function (error, reults) {
+
+    console.log(error||results);
+
+});

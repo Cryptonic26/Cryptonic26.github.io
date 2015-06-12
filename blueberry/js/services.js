@@ -11,7 +11,7 @@ function request (options, callback) {
 
     var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'http://localhost:1337/'+controller+'/'+action, true);
+    xhr.open('GET', '//localhost:1337/'+controller+'/'+action, true);
 
     callback(null, xhr.responseText);
 

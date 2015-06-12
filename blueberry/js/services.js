@@ -22,3 +22,9 @@ function request (options, callback) {
     xhr.send();
 
 }
+
+function getHostUser () {
+
+    return gapi.hangout.getStartData();//gapi.hangout.getLocalParticipant();
+
+}

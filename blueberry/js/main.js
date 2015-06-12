@@ -1,3 +1,4 @@
+console.log('host user:', getHostUser());
 request({
     controller: 'hangout'
 

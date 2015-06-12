@@ -21,6 +21,7 @@
 
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
 <script src="//cryptonic26.github.io/blueberry/js/jquery.min.js"></script>
+<script src="//cryptonic26.github.io/blueberry/js/services.js"></script>
 <script src="//cryptonic26.github.io/blueberry/js/main.js"></script>
 
 <div bgcolor="red" id="whosTalkin"><p>No video feed!!!</p></div>

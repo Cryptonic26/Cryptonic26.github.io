@@ -1,7 +1,7 @@
 request({
     controller: 'hangout'
 
-}, function (error, reults) {
+}, function (error, results) {
 
     console.log(error||results);
 

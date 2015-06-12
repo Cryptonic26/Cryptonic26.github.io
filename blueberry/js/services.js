@@ -13,7 +13,11 @@ function request (options, callback) {
 
     xhr.open('GET', '//localhost:1337/'+controller+'/'+action, true);
 
-    callback(null, xhr.responseText);
+
+
+    xhr.onload = function () {
+        callback(null, this.responseText);
+    };
 
     xhr.send();
 

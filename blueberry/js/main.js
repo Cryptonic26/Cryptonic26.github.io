@@ -1,4 +1,8 @@
-console.log('host user:', getHostUser());
+gapi.hangout.onApiReady.add(function(eventObj) {
+    console.log('testing');
+});
+
+/*console.log('host user:', getHostUser());
 request({
     controller: 'hangout'
 
@@ -6,4 +10,4 @@ request({
 
     console.log(error||results);
 
-});
+});*/

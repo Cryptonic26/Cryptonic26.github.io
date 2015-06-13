@@ -32,7 +32,25 @@
 <div id="participants"><p><i>Participants not available yet.</i></p></div>
 ﻿
 <script>
+gapi.hangout.onApiReady.add(function (eventObj) {
+    console.log('api ready');
 
+    console.log(gapi.hangout.getStartData());
+
+});
+
+gapi.hangout.onAppVisible.add(function(eventObj) {
+    console.log('app visible');
+
+    console.log(gapi.hangout.getStartData());
+
+
+});
+
+
+setTimeout(function () {
+    console.log(gapi.hangout.getStartData());
+}, 4000);
 // Remember some divs for easy reference later.
 var participantsDiv = document.getElementById('participants');
 var whosTalkin = document.getElementById('whosTalkin');

@@ -1,5 +1,12 @@
-gapi.hangout.onAppVisible.add(function(eventObj) {
+gapi.hangout.onApiReady.add(function (eventObj) {
+    console.log('api ready');
 
+    console.log(gapi.hangout.getStartData());
+
+});
+
+gapi.hangout.onAppVisible.add(function(eventObj) {
+    console.log('app visible');
 
     console.log(gapi.hangout.getStartData());
 

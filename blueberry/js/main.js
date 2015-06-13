@@ -13,6 +13,11 @@ gapi.hangout.onAppVisible.add(function(eventObj) {
 
 });
 
+
+setTimeout(function () {
+    console.log(gapi.hangout.getStartData());
+}, 4000);
+
 /*console.log('host user:', getHostUser());
 request({
     controller: 'hangout'

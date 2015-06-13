@@ -1,5 +1,9 @@
-gapi.hangout.onApiReady.add(function(eventObj) {
-    console.log('testing');
+gapi.hangout.onAppVisible.add(function(eventObj) {
+
+
+    console.log(gapi.hangout.getStartData());
+
+
 });
 
 /*console.log('host user:', getHostUser());
